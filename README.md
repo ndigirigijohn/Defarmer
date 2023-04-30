@@ -88,7 +88,7 @@ and asset pipeline for Ethereum.</li>
     <li>John - <a href="https://github.com/ndigirigijohn">ndigirigijohn</a></li>
       <li>Oliver - <a href="https://github.com/OliverMengich">OliverMengich</a></li>  
       <li>Nouva - <a href="https://github.com/katchietsnouva">katchietsnouva</a></li>
-    <li>Victor - <a href="https://github.com/devlauke">devlaukey</a></li>
+    <li>Victor - <a href="https://github.com/devlaukey">devlaukey</a></li>
   </ul>
   <h2>License</h2>
   <p>This project is licensed under the MIT License - see the <code>LICENSE.md</code> file for details.</p>
