@@ -85,8 +85,10 @@ and asset pipeline for Ethereum.</li>
   <p>Please read <code>CONTRIBUTING.md</code> for details on our code of conduct, and the process for submitting pull requests to us.</p>
   <h2>Authors</h2>
   <ul>
-    <li>John Doe - <a href="https://github.com/johndoe">johndoe</a></li>
-    <li>Jane Smith - <a href="https://github.com/janesmith">janesmith</a></li>
+    <li>John - <a href="https://github.com/ndigirigijohn">ndigirigijohn</a></li>
+      <li>Oliver - <a href="https://github.com/OliverMengich">OliverMengich</a></li>  
+      <li>Nouva - <a href="https://github.com/katchietsnouva">katchietsnouva</a></li>
+    <li>Victor - <a href="https://github.com/devlauke">devlaukey</a></li>
   </ul>
   <h2>License</h2>
   <p>This project is licensed under the MIT License - see the <code>LICENSE.md</code> file for details.</p>
