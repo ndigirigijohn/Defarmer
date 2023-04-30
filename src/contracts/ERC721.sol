@@ -19,12 +19,10 @@ contract ERC721{
     mapping(address => bool) public isMember;
     mapping(address => uint) public userSuccessFullTrades;
     function transferFrom(address _from, address payable _to, uint256 _index) public payable returns(bool) {
-        //require(_from.balance > price,'You have insufficient balance to transact');
         require(_from != address(0),'Invalid address');
         require(_to != address(0),' Invalid address');
         require(address(_to) != address(_from) ,'you cannot send to yourself');
         require(isMember[_from] == true,'not a member');
-        
         bool result = _transferFrom(_from, _to, _index);
         return result;
     }

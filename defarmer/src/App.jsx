@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import './App.css';
 import Defarmer from '../src/abis/Defarmer.json'
 import detectEthereumProvider from '@metamask/detect-provider';
@@ -10,7 +10,17 @@ import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import BuyPage from './pages/buy/buy-item';
 import HomePage from './pages/Home/HomePage';
 import Defaultpage from './pages/default/defaultpage.component';
-export default async function App() {
+export default function App() {
+    const loadWeb3 =async ()=>{
+        const provider = await detectEthereumProvider();
+        if(provider){
+        window.web3 = new Web3(provider);
+        await loadBlockchainData();
+        }else{
+        window.web3 =null;
+        alert('PLEASE INSTALL METAMASK!!')
+        }
+    }
     useEffect(()=>{
         const componentDidMount = async()=>{
            await loadWeb3();
@@ -23,16 +33,7 @@ export default async function App() {
         contract: null,
         agriProducts: []
     })
-    const loadWeb3 =async ()=>{
-        const provider = await detectEthereumProvider();
-        if(provider){
-        window.web3 = new Web3(provider);
-        await loadBlockchainData();
-        }else{
-        window.web3 =null;
-        alert('PLEASE INSTALL METAMASK!!')
-        }
-    }
+    
     const loadBlockchainData= async()=>{
         const web3 = window.web3
         const accounts = await web3.eth.requestAccounts();

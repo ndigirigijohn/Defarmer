@@ -1,16 +1,20 @@
-import React,{useState,useRef,useContext,useEffect} from "react";
+import {useState,useRef} from "react";
 import './body-contents.css';
 import userInfo from "../../pages/Home/users.data";
 import Backdrop from "../Backdrop/Backdrop";
 import Modal from "../modal/Modal";
-import BlockchainContext from "../../context/blockchain.context";
-function BodyContents({ products, userLoggedIn, viewProductHandler, sellProductHandler, conversionVals }) {
+// import BlockchainContext from "../../context/blockchain.context";
+import verifiedImage from './verified.png';
+import playholder from './placeholder.png';
+// eslint-disable-next-line react/prop-types
+function BodyContents({ products, userLoggedIn, viewProductHandler, sellProductHandler, conversionValsn }) {
     //converts from ETH to KES
+    // eslint-disable-next-line no-unused-vars
     const [conversionVals, setConversionVals] = useState({
         from: 0.000,
         to: 0.000
     })
-    const context = useContext(BlockchainContext);
+    // const context = useContext(BlockchainContext);
     const NameOwner =(address)=>{
         const user = userInfo.filter(e=>e.address===address)
         return user[0]
@@ -60,8 +64,8 @@ function BodyContents({ products, userLoggedIn, viewProductHandler, sellProductH
             },
             {
                 
-                products.length !==0?(
-                    products.map(product => {
+                products?.length !==0?(
+                    products?.map(product => {
                         console.log(product);
                         return(
                             <div key={product.count} className="body-contents">
@@ -73,7 +77,7 @@ function BodyContents({ products, userLoggedIn, viewProductHandler, sellProductH
                                     {/* <img src={require("./ethereum.png")} alt="eth"/> */}
                                 </div>
                                 <div className='user__name'>
-                                <img src={require('./placeholder.png')} alt='verified'/>
+                                <img src={playholder} alt='verified'/>
                                     <p>{NameOwner(product._owner).location}</p>
                                 </div>
                                 <div className='user__name'>
@@ -82,7 +86,7 @@ function BodyContents({ products, userLoggedIn, viewProductHandler, sellProductH
                                         <h4>{NameOwner(product._owner).name}</h4>
                                         {
                                             NameOwner(product._owner).verified &&(
-                                                <img src={require('./verified.png')} alt='verified'/>
+                                                <img src={verifiedImage} alt='verified'/>
                                             )
                                         }
                                     </div>
@@ -91,7 +95,7 @@ function BodyContents({ products, userLoggedIn, viewProductHandler, sellProductH
                                 <p>Date Harvested: {product._harvestDate} </p>
                                 {
                                     (product._owner !== userLoggedIn) &&(
-                                        <button onClick={viewProductHandler.bind(this,product.count)} className="btn">View</button>
+                                        <button onClick={()=>viewProductHandler(product.count)} className="btn">View</button>
                                     )
                                 }
                                 {
