@@ -1,0 +1,23 @@
+{
+  "name": "defarmer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ndigirigijohn/Defarmer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ndigirigijohn/Defarmer/issues"
+  },
+  "homepage": "https://github.com/ndigirigijohn/Defarmer#readme",
+  "dependencies": {
+    "@truffle/hdwallet-provider": "^2.1.10",
+    "web3": "^1.9.0"
+  }
+}
