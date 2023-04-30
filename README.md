@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Defarmer - Peer-to-Peer Agricultural Marketplace</title>
-</head>
+
 <body>
   <h1>Defarmer - Peer-to-Peer Agricultural Marketplace</h1>
   
