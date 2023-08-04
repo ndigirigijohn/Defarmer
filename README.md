@@ -1,14 +1,9 @@
-<!DOCTYPE html>
-<html>
 
-<body>
-  <h1>Defarmer - Peer-to-Peer Agricultural Marketplace</h1>
+  ## Defarmer - Peer-to-Peer Agricultural Marketplace
+  ### Getting Started
+  #### Prerequisites
   
-  <h2>Getting Started</h2>
-  
-  <h3>Prerequisites</h3>
-  
-  <p>To run the application locally, you need to have the following installed on your machine:</p>
+  To run the application locally, you need to have the following installed on your machine:
   
   <ul>
     <li><a href="https://nodejs.org/en/">Node.js</a> (v14.16.0 or later)</li>
@@ -20,15 +15,15 @@
   <ol>
     <li>Clone the repository:</li>
     
-    <pre><code>git clone https://github.com/your-username/defarmer.git</code></pre>
+  git clone https://github.com/your-username/defarmer.git
     
-    <li>Change into the project directory:</li>
+   Change into the project directory:>
     
-    <pre><code>cd defarmer</code></pre>
+   <code>cd defarmer</code>
     
-    <li>Install the required packages:</li>
+   Install the required packages:
     
-    <pre><code>npm install</code></pre>
+  <code>npm install</code>
   </ol>
   
   <h3>Running the Application</h3>
@@ -36,17 +31,17 @@
   <ol>
     <li>Start the development server:</li>
     
-    <pre><code>npm start</code></pre>
+   `npm start`
     
-    <li>Open your browser and connect to the local development network in Metamask. If you haven't done this before, follow the steps below:</li>
+   Open your browser and connect to the local development network in Metamask. If you haven't done this before, follow the steps below:
     
-    <ol type="a">
-      <li>Open the Metamask extension in your browser.</li>
-      <li>Click on the network dropdown at the top and select "Custom RPC".</li>
-      <li>Enter <code>http://localhost:8545</code> in the "New RPC URL" field and click "Save".</li>
-    </ol>
+  
+    Open the Metamask extension in your browser
+   Click on the network dropdown at the top and select "Custom RPC".
+    Enter <code>http://localhost:8545</code> in the "New RPC URL" field and click "Save".
+   
     
-    <li>Navigate to <code>http://localhost:3000</code> in your browser to access the application.</li>
+   Navigate to <code>http://localhost:3000</code> in your browser to access the application.
   </ol>
   
   <h3>Testing</h3>
@@ -62,12 +57,12 @@
   <ol>
     <li>Add your Infura project ID and your Metamask mnemonic to the <code>.env</code> file:</li>
     
-    <pre><code>REACT_APP_INFURA_PROJECT_ID=&lt;your Infura project ID&gt;
-MNEMONIC=&lt;your Metamask mnemonic&gt;</code></pre>
+   <code>REACT_APP_INFURA_PROJECT_ID=&lt;your Infura project ID&gt;
+MNEMONIC=&lt;your Metamask mnemonic&gt;</code>
     
-    <li>Compile and deploy the smart contracts:</li>
+   Compile and deploy the smart contracts:
     
-    <pre><code>npm run deploy</code></pre>
+  <code>npm run deploy</code>
   </ol>
   
   <h2>Built With</h2>
