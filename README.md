@@ -15,9 +15,9 @@
   <ol>
     <li>Clone the repository:</li>
     
-  git clone https://github.com/your-username/defarmer.git
+  git clone https://github.com/ndigirigijohn/Defarmer.git
     
-   Change into the project directory:>
+   Change into the project directory:
     
    <code>cd defarmer</code>
     
